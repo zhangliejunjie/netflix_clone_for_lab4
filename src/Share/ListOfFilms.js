@@ -2,6 +2,7 @@ export const ListOfFilms = new Array();
 ListOfFilms[0] = new Array({
   id: 1,
   "image": "../images/film_1.webp",
+  "video": "https://youtu.be/0-wPm99PF9U",
   "title": "Kim Vân Kiều",
   "year": "2007",
   "nation": "Giàn Nhạc giao hưởng HCM",
@@ -12,6 +13,7 @@ ListOfFilms[0] = new Array({
   {
     id: 2,
     "image": "../images/film_2.jpg",
+    "video": "https://youtu.be/RlOB3UALvrQ",
     "title": "Người đẹp Tây Đô",
     "year": "2006",
     "nation": "Hãng phim Phương Nam",
@@ -22,6 +24,7 @@ ListOfFilms[0] = new Array({
   {
     id: 3,
     "image": "../images/film_3.webp",
+    "video": "https://youtu.be/WsBV9s1SqpM",
     "title": "Phạm Công Cúc Hoa",
     "year": "1089",
     "nation": "Hãng dĩa Việt Nam",
@@ -32,6 +35,7 @@ ListOfFilms[0] = new Array({
   {
     id: 4,
     "image": "../images/film_4.jpg",
+    "video": "https://youtu.be/qMy5oQiA2W8",
     "title": "Hoàn Châu Cách Cách",
     "year": "1998",
     "nation": "TVB",
@@ -42,6 +46,7 @@ ListOfFilms[0] = new Array({
   {
     id: 5,
     "image": "../images/film_5.jpg",
+    "video": "https://youtu.be/PWvhhdn16ow",
     "title": "Tân Dòng sông ly biệt",
     "year": "2002",
     "nation": "NVC",
@@ -51,6 +56,7 @@ ListOfFilms[0] = new Array({
 ListOfFilms[1] = new Array({
   id: 6,
   "image": "../images/film_6.jpg",
+  "video": "https://youtu.be/IAqDfpaDO84",
   "title": "Lôi Vũ",
   "year": "1995",
   "nation": "HTV",
@@ -61,6 +67,7 @@ ListOfFilms[1] = new Array({
   {
     id: 7,
     "image": "../images/film_7.jpg",
+    "video": "https://youtu.be/dRuwjZJ-DQw",
     "title": "Kiều Nguyệt Nga",
     "year": "1990",
     "nation": "Nhà hát Trần Hữu Trang",

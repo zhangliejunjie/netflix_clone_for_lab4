@@ -5,14 +5,12 @@
 }
 
 html {
-  /* font-size: 62.5px; */
   scroll-behavior: smooth;
   background: #141414;
 }
 
-.brand-tag {
+/* .brand-tag {
   height: 68px;
-  /* background-color: aqua; */
 }
 
 .header {
@@ -53,17 +51,16 @@ html {
   text-decoration: none;
   display: flex;
   align-items: center;
-}
+} */
 
 /* Parallax */
 
-.parallax {
+/* .parallax {
   background-image: url(../public/images/background.webp), linear-gradient(to top, #141414 0%, rgba(255, 255, 255, 0) 100%);
   background-blend-mode: darken;
   min-height: 80vh;
   width: 100%;
   background-size: cover;
-  /* background-image: url(../public/images/background.webp); */
 }
 
 @media screen and (max-width: 900px) {
@@ -82,7 +79,7 @@ html {
   .parallax {
     min-height: 10vh;
   }
-}
+} */
 
 /* Trending */
 .wrapper {
@@ -98,6 +95,7 @@ html {
   display: grid;
   grid-template-columns: repeat(5, auto);
   margin: 30px 0;
+  z-index: 2;
 }
 
 .wrapper section .item {
@@ -285,6 +283,7 @@ html {
   opacity: 1;
 }
 .popup {
+  z-index: 999;
   margin: 70px auto;
   padding: 5px;
   background: #fff;
@@ -301,6 +300,7 @@ html {
 }
 .popup .close {
   position: absolute;
+  z-index: 100;
   top: 20px;
   right: 30px;
   transition: all 200ms;
@@ -385,12 +385,17 @@ html {
 }
 
 .cards_detail {
-  
+  position: absolute;
+  top: -12vh;
+  left: 0;
+  transform: translate(50%, 10%);
+  z-index: 999;
   display: flex;
   gap: 0.75rem;
 }
 
 .wrapper_cards {
+  z-index: 100;
   margin: 0 auto;
   position: relative;
   width: 600px;
@@ -400,6 +405,7 @@ html {
   /* position: absolute; */
   /* top: 20px; */
   /* left: 300px; */
+  z-index: 100;
   margin: 0 auto;
   margin-top: 80px;
   width: 600px;
@@ -408,12 +414,12 @@ html {
 .wrapper__back {
   /**/
   /* position: absolute; */
-  
+  z-index: 100;
   opacity: 1;
   /* width: 200%; */
   transition: all 250ms ease-out;
   transition-delay: 200ms;
-  z-index: 999;
+  /* z-index: 999; */
   top: 30px!important;
 }
 

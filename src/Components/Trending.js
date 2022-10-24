@@ -7,8 +7,6 @@ export default function Treding({ filmList }) {
 
     return (
         <div className="wrapper">
-
-
             <section id="section1">
                 <a href="#section3" className="arrow__btn left-arrow">‹</a>
                 {filmList[0].map((film =>
@@ -69,30 +67,6 @@ export default function Treding({ filmList }) {
                 }
                 <a href="#section1" className="arrow__btn right-arrow">›</a>
             </section>
-
-            {/* <Container>
-                <a href="#section2" className="arrow__btn left-arrow">‹</a>
-                <Row s={12} m={12}>
-                    {filmList[2].map(film => (
-                        <Col >
-                            <Card mr={0}>
-                                <img class="responsive-img" src={film.image} alt="no"></img>
-                                <CardTitle>{film.title}</CardTitle>
-                                <p>Year public: {film.year}</p>
-                                <p>Country: {film.nation}</p>
-                                <p>
-                                    <Link to={`detail/${film.id}`}>
-                                        <button className="button1">Detail</button>
-                                    </Link>
-                                </p>
-                            </Card>
-
-                        </Col>
-                    ))
-                    }
-                </Row>
-                <a href="#section1" className="arrow__btn right-arrow">›</a>
-            </Container> */}
 
             {/* pop up đẹp */}
             <div className="overlay cards" id='popup1'>
@@ -156,31 +130,7 @@ export default function Treding({ filmList }) {
                     </div>
                 </div>
             </div>
-            {/* Pop up của thầy */}
-            {/* <div id='popup1' className='overlay'>
-                <div className='popup'>
-                    <a id='openPopUp' href='#popup1' onClick={() => { setFilm(film) }}>
-                        <img
-                            src={film.image}
-                            alt="Describe Image" />
-                        <h1 className="title">{film.title}</h1>
-                        <a className='close' href='#'>&times;</a>
-                        <p className="year">{film.year}</p>
-                        <p className='nation'>{film.nation}</p>
-                    </a>
-                </div>
-            </div> */}
-
-
-
-
             <div className='fill'></div>
-
-
-
-
-
-
 
         </div>
     )
