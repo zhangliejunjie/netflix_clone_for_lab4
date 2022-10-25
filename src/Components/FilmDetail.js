@@ -65,6 +65,18 @@ export default function FilmDetail() {
                             paddingTop: "calc(9 / 16 * 100%)",
                         }}
                     >
+                        <Box
+                            sx={{
+                                background: `linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%)`,
+                                top: 0,
+                                left: 0,
+                                bottom: 0,
+                                right: "26.09%",
+                                opacity: 1,
+                                position: "absolute",
+                                transition: "opacity .5s",
+                            }}
+                        />
                         <ReactPlayer
                             loop
                             muted={true}
