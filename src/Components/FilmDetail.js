@@ -192,8 +192,6 @@ export default function FilmDetail() {
 
                             <Container
                                 sx={{
-                                    // py: 2,
-                                    // px: { xs: 2, sm: 3, md: 5 },
                                     p: "0px !important",
                                 }}
                             >
@@ -245,10 +243,10 @@ export default function FilmDetail() {
                                     </Grid>
                                     <Grid item xs={12} sm={6} md={4}>
                                         <Typography variant="body2" sx={{ my: 1, color: "white" }}>
-                                            {`Genres : Drama`}
+                                            {`Genres : Drama, History, War`}
                                         </Typography>
                                         <Typography variant="body2" sx={{ my: 1, color: "white" }}>
-                                            {`Available in : My list`}
+                                            {`Available in : Deutsch, Polski, עִבְרִית, English`}
                                         </Typography>
                                     </Grid>
                                 </Grid>

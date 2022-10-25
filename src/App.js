@@ -16,6 +16,7 @@ import FooterMeow from './components/FooterMeow';
 import TopTrailer from './components/TopTrailer';
 import SimilarVideoCard from './components/SimilarVideoCard';
 import { Grid } from '@mui/material';
+import About from './components/About';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </Route>
         <Route path='/detail/:id' element={<FilmDetail />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/about' element={<About />}></Route>
 
       </Routes>
       <FooterMeow />

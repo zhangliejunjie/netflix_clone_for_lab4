@@ -14,8 +14,36 @@ import SearchBox from "./SearchBox";
 import Logo from "./Logo";
 import useOffSetTop from "../hooks/useOffSetTop";
 import NetflixNavigationLink from "./NetflixNavigationLink";
+import NotificationsPopover from "./NotificationsPopover";
 
 const pages = ["My List", "Movies", "TV Shows", "About", "Contact"];
+
+const pageInfor = [
+  {
+    title: "My List",
+    link: "/",
+  },
+  {
+    title: "Movies",
+    link: "/",
+  },
+  {
+    title: "TV Shows",
+    link: "/",
+  },
+  {
+    title: "News",
+    link: "/",
+  },
+  {
+    title: "About",
+    link: "/about",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+];
 
 const Navigation = () => {
   const isOffset = useOffSetTop(100);
@@ -120,20 +148,21 @@ const Navigation = () => {
           spacing={3}
           sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
         >
-          {pages.map((page) => (
+          {pageInfor.map((page) => (
             <NetflixNavigationLink
-              to=""
+              to={page.link}
               variant="subtitle1"
-              key={page}
+              // key={page}
             // onClick={handleCloseNavMenu}
             >
-              {page}
+              {page.title}
             </NetflixNavigationLink>
           ))}
         </Stack>
 
         <Box sx={{ flexGrow: 0, display: "flex", gap: 2 }}>
           <SearchBox />
+          <NotificationsPopover />
           <Tooltip title="Open settings">
             <IconButton
               onClick={handleOpenUserMenu}
@@ -158,8 +187,8 @@ const Navigation = () => {
             onClose={handleCloseUserMenu}
           >
             {["Account", "Logout"].map((setting) => (
-              <MenuItem key={setting} 
-              onClick={handleCloseUserMenu}
+              <MenuItem key={setting}
+                onClick={handleCloseUserMenu}
               >
                 <Typography textAlign="center">{setting}</Typography>
               </MenuItem>
