@@ -16,7 +16,7 @@ import useOffSetTop from "../hooks/useOffSetTop";
 import NetflixNavigationLink from "./NetflixNavigationLink";
 import NotificationsPopover from "./NotificationsPopover";
 
-const pages = ["My List", "Movies", "TV Shows", "About", "Contact"];
+const pages = ["My List", "Movies", "TV Shows", "About", "Contact", "Accounts"];
 
 const pageInfor = [
   {
@@ -42,6 +42,10 @@ const pageInfor = [
   {
     title: "Contact",
     link: "/contact",
+  },
+  {
+    title: "Accounts",
+    link: "/accounts",
   },
 ];
 

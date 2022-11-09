@@ -14,26 +14,64 @@ import {
 } from "react-router-dom";
 import FooterMeow from './components/FooterMeow';
 import TopTrailer from './components/TopTrailer';
-import SimilarVideoCard from './components/SimilarVideoCard';
-import { Grid } from '@mui/material';
 import About from './components/About';
+import Accounts from './components/Accounts';
+import ItemsPage from './components/ItemsPage';
 
 
 function App() {
   return (
     <div className='App'>
-      <Navigation />
+
       <Routes>
         <Route
           path='/'
-          element={<><TopTrailer /><Trending filmList={ListOfFilms} ></Trending></>} >
+          element={
+            <>
+              <Navigation />
+              <TopTrailer />
+              <Trending filmList={ListOfFilms} /> 
+              <FooterMeow />
+            </>}
+        >
         </Route>
-        <Route path='/detail/:id' element={<FilmDetail />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/about' element={<About />}></Route>
-
+        <Route path='/detail/:id'
+          element={
+            <>
+              <Navigation />
+              <TopTrailer />
+              <Trending filmList={ListOfFilms} />
+              <FilmDetail />
+              <FooterMeow />
+            </>
+          }
+        />
+        <Route path='/contact' element={
+          <>
+            <Navigation />
+            <Contact />
+            <FooterMeow />
+          </>
+        } />
+        <Route path='/about'
+          element={
+            <>
+              <Navigation />
+              <About />
+              <FooterMeow />
+            </>
+          } />
+        <Route path='/accounts' element={
+          <>
+            <Navigation />
+            <Accounts />
+            {/* <FooterMeow /> */}
+          </>
+        } />
       </Routes>
-      <FooterMeow />
+      
+
+
     </div>
 
   );
